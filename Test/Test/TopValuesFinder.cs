@@ -7,15 +7,11 @@ namespace Test
 	{
 		public int FindMaxValue(int[] anyOldOrderValues)
 		{
-			/*this is just a specific case for FindTopNValues - I could call here:
-			 * return FindTopNValues(anyOldOrderValues, 1)[0];
-			 * but I rather use more simple Linq construct which could be more efficient
-			 */
-
 			if (anyOldOrderValues.Length == 0)
 			{
 				throw new ArgumentException("empty array is not allowed", "anyOldOrderValues");
 			}
+
 			return anyOldOrderValues.Max();
 		}
 
