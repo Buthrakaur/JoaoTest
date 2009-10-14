@@ -8,7 +8,7 @@ namespace Test
 		public int FindMaxValue(int[] anyOldOrderValues)
 		{
 			/*this is just a specific case for FindTopNValues - I could call here:
-			 * return FindTopNValues(anyOldOrderValues, 0);
+			 * return FindTopNValues(anyOldOrderValues, 1)[0];
 			 * but I rather use more simple Linq construct which could be more efficient
 			 */
 
